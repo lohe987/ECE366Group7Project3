@@ -1,0 +1,16 @@
+SAR 2 	# r2 active
+MOVI 2 	# r2 = 2
+SLL 2 	# r2 = 8
+ADDI 2 	# r2 = 10
+SAR 0 	# r0 active
+MOVI 0 	# r0 = 0
+SPC 0 	# store addr + 0
+SAR 1 	# r1 active
+LOAD 0 	# r1 = mem[r0]
+ADD 1 	# r1 = r1 + r1
+STOR 0 	# mem[r0] = r1
+SAR 0 	# r0 active
+ADDI 1 	# r0 = r0 + 1
+BSLT 2 	# branch if r0 < r2
+STOP 	# end
+debug

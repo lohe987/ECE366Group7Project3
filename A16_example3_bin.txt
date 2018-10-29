@@ -1,0 +1,14 @@
+0000001 # register 1 now active
+1011011 # r1 = 3
+0000000 # register 0 now active
+1011001 # r0 = 1
+0100001 # r0 << r1
+1100010 # r0 = r0 + 2
+0000001 # register 1 now active
+1011000 # r1 = 0
+1101001 # rp = PC + r1
+0111001 # r1 = M[r1]
+1100001 # r1 = r1 + 1
+1010000 # branch if r1 < r0
+1111000 # end
+debug
